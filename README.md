@@ -1,4 +1,4 @@
-# YOLOv8 Custom Dataset Project
+# YOLOv8 Custom Dataset Project   by You Chul Jeong
 
 ## Overview
 This repository contains the code and resources for training and utilizing YOLOv8 on a custom dataset. YOLOv8 is a state-of-the-art object detection model that can be fine-tuned for various applications, including custom datasets.
