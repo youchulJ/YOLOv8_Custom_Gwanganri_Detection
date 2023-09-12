@@ -1,5 +1,3 @@
-# YOLOv8-custom
-
 # YOLOv8 Custom Dataset Project
 
 ## Overview
