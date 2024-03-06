@@ -53,7 +53,5 @@ Explain how to perform inference using the trained model. Provide sample code an
 Present the results of your YOLOv8 model on the custom dataset. Include performance metrics, visualizations, and any insights gained from the object detection results.
 
 ## License
-This project is licensed under the [Your License] - Include a link or reference to your license file.
-
 Feel free to customize this README template further to include specific details about your project and its implementation. Good luck with your YOLOv8 custom dataset project!
 
