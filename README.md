@@ -1,57 +1,64 @@
-# YOLOv8 Custom Dataset Project   
-by Youchul Jeong
+# YOLOv8 Custom Gwanganri Detection
 
-## Overview
-This repository contains the code and resources for training and utilizing YOLOv8 on a custom dataset. YOLOv8 is a state-of-the-art object detection model that can be fine-tuned for various applications, including custom datasets.
+This repository contains a custom implementation of the YOLOv8 object detection model tailored for the Gwanganri area. The primary focus is to detect specific objects relevant to the region using the YOLOv8 architecture.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Getting Started](#getting-started)
-- [Custom Dataset](#custom-dataset)
-- [Training](#training)
-- [Inference](#inference)
-- [Results](#results)
-- [License](#license)
+## Project Structure
 
-## Introduction
-In this project, we implement YOLOv8 for object detection on a custom dataset. YOLO (You Only Look Once) is a popular real-time object detection algorithm, and YOLOv8 represents one of the latest iterations with improvements in accuracy and speed.
-
-## Requirements
-- Python 3.x
-- PyTorch
-- CUDA-enabled GPU (recommended for faster training)
-- Other dependencies (list them if necessary)
+- **dataset/**: Contains the dataset used for training and validation.
+- **models/**: Holds the architecture and weights for the YOLOv8 model.
+- **notebooks/**: Jupyter notebooks that provide detailed analysis and execution steps.
+- **scripts/**: Python scripts for training, validation, and inference.
 
 ## Getting Started
-To get started with this project, follow these steps:
 
-1. Clone this repository:
+To get started with this project, follow the steps below:
 
-2. Install the required dependencies:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/youchulJ/YOLOv8_Custom_Gwanganri_Detection.git
+   cd YOLOv8_Custom_Gwanganri_Detection
+   ```
 
-3. Download or prepare your custom dataset and follow the instructions in the [Custom Dataset](#custom-dataset) section.
+2. **Install Dependencies:**
+   Use the requirements.txt file to install the necessary packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. Proceed with training and inference as described in the respective sections.
+3. **Prepare the Dataset:**
+   Make sure the dataset is properly formatted and placed in the **dataset/** directory.
 
-## Custom Dataset
-To use YOLOv8 with a custom dataset, you should organize your dataset in the YOLO format. Here are some essential steps:
+4. **Model Training:**
+   Execute the training script located in the **scripts/** directory:
+   ```bash
+   python scripts/train.py
+   ```
 
-1. Prepare your dataset images and annotations.
+5. **Evaluation:**
+   After training, run the evaluation script:
+   ```bash
+   python scripts/evaluate.py
+   ```
 
-2. Create a data configuration file that specifies the paths to your dataset and class labels.
+6. **Inference:**
+   Use the inference script to test the model:
+   ```bash
+   python scripts/infer.py
+   ```
 
-3. Configure YOLOv8 to use your data configuration.
+## Notebooks
 
-## Training
-In the training section, describe how to train the YOLOv8 model on your custom dataset. Include details on hyperparameters, training options, and any additional tips or considerations.
+The **notebooks/** folder contains Jupyter notebooks that explain the analysis process and model evaluation. Use the following order for execution:
 
-## Inference
-Explain how to perform inference using the trained model. Provide sample code and instructions on how to use the model for object detection on new images or videos.
+1. **Data Exploration Notebook** – Explore and visualize the dataset.
+2. **Model Training Notebook** – Document the training process and parameters.
+3. **Evaluation Notebook** – Show evaluation metrics and results.
+4. **Inference Notebook** – Demonstrate how to run inference on new data.
 
-## Results
-Present the results of your YOLOv8 model on the custom dataset. Include performance metrics, visualizations, and any insights gained from the object detection results.
+## Contributing
+
+If you'd like to contribute, please fork the repository and submit a pull request. We appreciate any contributions and feedback!
 
 ## License
-Feel free to customize this README template further to include specific details about your project and its implementation. Good luck with your YOLOv8 custom dataset project!
 
+This project is licensed under the MIT License. See the LICENSE file for more details.
